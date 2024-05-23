@@ -1,0 +1,228 @@
+<div class=" content">
+  <form id="registroPortaria" 
+      >
+    <div class=" row">
+      <div class=" col-7">
+        <div class=" card card-chart">
+          <div class=" card-header">
+            <div class=" row">
+              <div class=" col-sm-6 text-left">
+                <h5 class=" card-category">controle de Cadastro de Visitante</h5>
+                <h2 class=" card-title">Visitante</h2>
+              </div>
+            </div>
+          </div>
+          <div class=" card-body">
+            <div class=" col-12">
+              <img height="300" width="100%">
+            </div>
+            <div class="row" style="margin: 0.1em;">
+              <div class=" col-12" style=" margin-bottom: 30px; margin-top: 10px;">
+                <h4 class=" card-title"> Informe o tipo da Pessoa </h4>
+                <div class=" form-check form-check-radio form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1"> Visitante
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class=" form-check form-check-radio form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1"> Delivery
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class=" form-check form-check-radio form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1"> Entrega
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+                <div class=" form-check form-check-radio form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1"> Carro App
+                    <span class="form-check-sign"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin: 0.1em;">
+              <div class=" col-7">
+                <div class="form-group">
+                  <label> CPF </label>
+                  <div class="d-flex justify-content-start ">
+                    <input label="CPF" id="cpf" name="cpf" class=" form-control col-10" type="text" mask="000.000.000-00"
+                      formControlName="cpf" />
+                    <button class=" btn btn-primary btn-round btn-icon" style="margin-left: 10px; height: 30px;"
+                      (click)="consultarCPF()">
+                      <i class="tim-icons icon-zoom-split"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class=" form-group">
+                  <label> Nome do Visitante </label>
+                  <input class=" form-control" type="text" />
+                </div>
+                <div class=" form-group">
+                </div>
+                <div class=" form-group">
+                  <label> Placa Carro </label>
+                  <input class=" form-control col-4" type="text" />
+                </div>
+              </div>
+              <div class="col-5 card-tasks" style=" height:300px">
+                <div class=" table-full-width table-responsive" style=" height:300px">
+                  <table class=" table">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p class=" title">Acesso: 20/12/22 as 16:41</p>
+                          <p class=" text-muted">
+                            end: Rua-M Casa:31 <br>
+                            autorizador: Fulando da Silva
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class=" title">Acesso: 20/12/22 as 16:41</p>
+                          <p class=" text-muted">
+                            end: Rua-M Casa:31 <br>
+                            autorizador: Fulando da Silva
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class=" title">Acesso: 20/12/22 as 16:41</p>
+                          <p class=" text-muted">
+                            end: Rua-M Casa:31 <br>
+                            autorizador: Fulando da Silva
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class=" title">Acesso: 20/12/22 as 16:41</p>
+                          <p class=" text-muted">
+                            end: Rua-M Casa:31 <br>
+                            autorizador: Fulando da Silva
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class=" title">Acesso: 20/12/22 as 16:41</p>
+                          <p class=" text-muted">
+                            end: Rua-M Casa:31 <br>
+                            autorizador: Fulando da Silva
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p class=" title">Acesso: 20/12/22 as 16:41</p>
+                          <p class=" text-muted">
+                            end: Rua-M Casa:31 <br>
+                            autorizador: Fulando da Silva
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-5">
+        <h2 class=" card-title">Endereço</h2>
+        <div class="form-group " style="margin-top: -20px;">
+          <label for="inputState">Rua</label>
+          <select id="inputState" class="form-control">
+            <option selected>Selecione...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group ">
+          <label for="inputState">Casa</label>
+          <select id="inputState" class="form-control">
+            <option selected>Selecione...</option>
+            <option>...</option>
+          </select>
+        </div>
+        <!-- <alert class="" data-notify="container" [type]="'warning alert-with-icon'">
+            <button aria-hidden="true" aria-label="Close" class=" close" data-dismiss="alert" type="button">
+              <i class=" tim-icons icon-simple-remove"> </i>
+            </button>
+            <span class=" tim-icons icon-bell-55" data-notify="icon"> </span>
+            <span data-notify="message">
+              Mensagem: Solicitei um IFOOD.
+            </span>
+          </alert> -->
+        <div class="">
+          <h2 class=" card-title">Moradores</h2>
+          <ul class="list-group list-group-flush">
+            <li class=" list-group-item d-flex justify-content-between align-items-center"> Fernando Feitosa (principal)
+              <button type="button" class="btn btn-primary btn-icon btn-sm " data-target="#myModal10"
+                (click)="myModal10.show()" data-original-title="" title="">
+                <i class="tim-icons icon-mobile"></i>
+              </button>
+            </li>
+            <li class=" list-group-item d-flex justify-content-between align-items-center"> Daniela Silva
+              <button type="button" class="btn btn-primary btn-icon btn-sm " data-original-title="" title=""
+                (click)="showSwal('aceito')">
+                <i class="tim-icons icon-mobile"></i>
+              </button>
+            </li>
+            <li class=" list-group-item d-flex justify-content-between align-items-center"> Intrometido
+              <button type="button" class="btn btn-primary btn-icon btn-sm " data-original-title="" title=""
+                (click)="showSwal('recusado')">
+                <i class="tim-icons icon-mobile"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="" style="margin-top: 30px;">
+          <h3 class=" card-title">Autorizaçao de entrada pela Portaria</h3>
+          <button type="button" class="btn btn-info" (click)="showSwal('portaria')">
+            <i class="tim-icons icon-check-2"></i> Autorizar entra pela portaria
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" bsModal class=" modal fade modal-mini modal-danger "
+  #myModal10="bs-modal" id="myModal10" role="dialog" tabindex="-1">
+  <div class=" modal-dialog">
+    <div class=" modal-content">
+      <div class=" modal-header justify-content-center">
+        <button aria-hidden="true" class=" close" (click)="myModal10.hide()" data-dismiss="modal" type="button">
+          <i class=" tim-icons icon-simple-remove text-white">
+          </i>
+        </button>
+        <div class="modal-profile">
+          <img src="../../../assets/img/icones/icons8-phone-ringing.gif" alt="chamando"
+            style="width:50px; margin-top: -10px;">
+        </div>
+      </div>
+      <div class=" modal-body">
+        <p>Chamando Fernando ...</p>
+      </div>
+      <div class=" modal-footer">
+        <button class=" btn btn-link btn-neutral" type="button"></button>
+        <button class=" btn btn-link btn-neutral" data-dismiss="modal" (click)="myModal10.hide()" type="button">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
